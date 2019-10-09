@@ -6,7 +6,7 @@ import {
     TouchableOpacity
 } from "react-native";
 
-const TodoList = ({ todos, toggleTodo }) => (
+const TodoListItem = ({ todos, toggleTodo }) => (
     <View style={{ padding: 20 }}>
         {todos.map(todo =>
             <TouchableOpacity key={todo.id} onPress={() => toggleTodo(todo.id)}>
@@ -18,7 +18,7 @@ const TodoList = ({ todos, toggleTodo }) => (
         )}
     </View>
 )
-export default TodoList;
+export default TodoListItem;
 
 const styles = StyleSheet.create({
     container: {

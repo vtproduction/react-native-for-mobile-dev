@@ -20,13 +20,7 @@ class AddTodo extends Component {
 		this.setState({ text: '' })
 	}
 
-	constructor(props) {
-		super(props)
 	
-		console.log('====================================');
-		console.log(this.props);
-		console.log('====================================');
-	}
 	
 	
 	render() {
