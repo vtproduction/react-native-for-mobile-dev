@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
-import TodoApp from './src/TodoApp'
-import Navigator from './src/routes'
-export default class App extends React.Component {
+
+export class HomeScreen extends Component {
   render() {
     return (
-      <Navigator/>
-    );
+      <View style={styles.container}>
+        <Text>HomeScreen</Text>
+      </View>
+    )
   }
 }
 
+export default HomeScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
